@@ -8,3 +8,4 @@ for i:=1 to length(a) do a[i]:=lowercase(a[i]);
 write(a);
 readln;
 end.
+{In thuong tat ca chu trong xau}

@@ -9,3 +9,4 @@ while pos(#32#32,a)<>0 do delete(a,pos(#32#32,a),1);
 write('Sau khi xoa ki tu trang:',a);
 readln;
 end.
+{Xoa ki tu trang thua trong xau}

@@ -8,7 +8,7 @@ write('Nhap so:');readln(n);
 write(f1,',',f2,',');
 repeat begin
  f:=f1+f2;
- if f<n then write(f,',');
+ if f<n then write(f,' ');
  f2:=f1;f1:=f;
 end;
 until f>n;
