@@ -1,5 +1,5 @@
 uses crt;
-var n,m,max:longint;
+var i,n,m,max:longint;
 begin
 clrscr;
 write('Nhap tu:');readln(n);

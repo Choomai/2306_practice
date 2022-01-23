@@ -10,7 +10,7 @@ if a[i]=' ' then
 begin
  a[i+1]:=(upcase(a[i]));
  write(a[i]);
-end;
+end
 else write(a[i]);
 readln;
 end.

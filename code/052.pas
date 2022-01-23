@@ -11,8 +11,7 @@ begin
   begin
     dem:=0;
     if tam=n then break;
-    for j:=1 to i do
-    if i mod j=0 then inc(dem);
+    for j:=1 to i do if i mod j=0 then inc(dem);
     if dem=2 then
     begin
       inc(tam);
@@ -21,7 +20,7 @@ begin
   end;
   assign(f,'052.out');
   rewrite(f);
-  for i:=1 to n do val(a[i],i);
+  for k:=1 to n do val(a[k],i);
   for i:=1 to 4 do write(f,nt[i],' ');
   repeat
   begin
