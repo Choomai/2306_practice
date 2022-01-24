@@ -1,3 +1,3 @@
 Lập trình bởi: Nguyễn Cao Nguyên
-FB: @uranidiot0606
-Twitter: @YouAreA66813344
+Facebook: fb.com/uranidiot0606
+Twitter: twitter.com/YouAreA66813344
