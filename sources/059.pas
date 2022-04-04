@@ -1,5 +1,5 @@
 var f:text;
-h,m,s,i,adds,tams,tamm,tamh:byte;
+h,m,s,adds:byte;
 begin
   assign(f,'059.inp');
   reset(f);

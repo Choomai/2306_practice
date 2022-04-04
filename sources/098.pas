@@ -1,6 +1,6 @@
 var f:text;
 a:array[1..100,1..100] of longint;
-i,j,m,n,z,vt,min,max:longint;
+i,j,m,n,vt,min,max:longint;
 begin
   assign(f,'098.inp');
   reset(f);

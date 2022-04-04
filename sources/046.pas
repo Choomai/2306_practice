@@ -1,4 +1,4 @@
-var a,b:array[1..100000] of longint;
+var a:array[1..100000] of longint;
 x,kq:longint;
 n,i:byte;
 f:text;

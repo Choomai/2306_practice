@@ -1,18 +1,18 @@
-var tmp:string[4];
-i,j,tmpnum:longint;
-chk:boolean;
+var stri:string;
+i,j,k,n,ttl:longint;
+subi,lt:array[1..255] of longint;
 begin
-  for i:=1000 to 9999 do
+  read(n);
+  for i:=1 to n do
   begin
-    chk:=false;
-    for j:=1 to 4 do
-    begin
-      str(i,tmp);
-      delete(tmp,j,1);
-      val(tmp,tmpnum);
-      if tmpnum*9=i then chk:=true;
-    end;
-    if chk=true then write(i,' ');
+    str(i,stri);
+    ttl:=0;
+    for j:=1 to length(stri) do lt[j]:=1;
+    for j:=1 to length(stri) do val(stri[j],subi[j]);
+    for j:=1 to length(stri) do
+      for k:=1 to length(stri) do lt[j]:=lt[j]*subi[j];
+    for j:=1 to length(stri) do ttl:=ttl+lt[j];
+    if ttl=i then write(i,' ');
   end;
 end.
-{In ra so(xxxx) khi loai bo 1 chu so bat ki thi so do*9=(xxxx)}
+{So ArmStrong}

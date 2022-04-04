@@ -1,27 +1,32 @@
 var f:text;
-a:array[1..100000] of word;
-i,n,m,tmp,res,mtmp:longint;
+revcp,cp:array[1..676] of string[2];
+s:string;
+i,j,k,n,res,cnt:integer;
 begin
   assign(f,'127.inp');
   reset(f);
-  readln(f,n,m);
-  for i:=1 to n do read(f,a[i]);
+  readln(f,n,k);
+  readln(f,s);
+  for i:=1 to k do readln(f,cp[i]);
   close(f);
-  for i:=1 to n do
-  begin
-    tmp:=a[i];
-    inc(mtmp,tmp);
-    if mtmp>m then
-      begin
-        inc(res);
-        if (a[n]+mtmp>m) and (i=n) then inc(res);
-        mtmp:=a[i];
-      end;
-  end;
+  for i:=1 to k do
+    if cp[i][1]<>cp[i][2] then revcp[i]:=cp[i][2]+cp[i][1];
+  for i:=1 to k do
+    for j:=1 to n-1 do
+    begin
+      if (s[j]=cp[i][1]) and (s[j+1]=cp[i][2]) then inc(res);
+      if (s[j]=revcp[i][1]) and (s[j+1]=revcp[i][2]) then inc(res);
+    end;
+  for i:=1 to k do
+    if cp[i][1]=cp[i][2] then
+    begin
+      cnt:=0;
+      for j:=1 to n do if s[j]=cp[i][1] then inc(cnt);
+      if cnt=2 then inc(res);
+    end;
   assign(f,'127.out');
   rewrite(f);
-  if res=0 then inc(res);
   write(f,res);
   close(f);
 end.
-{Xep hang hoa sao cho so lan di xe la it nhat}
+{Chuoi ngoc}

@@ -1,12 +1,27 @@
-var n,i,tmp,ttl:longint;
+var f:text;
+a:array[1..100000] of word;
+i,n,m,tmp,res,mtmp:longint;
 begin
-  readln(n);
-  tmp:=1;ttl:=1;
-  for i:=2 to n do
+  assign(f,'125.inp');
+  reset(f);
+  readln(f,n,m);
+  for i:=1 to n do read(f,a[i]);
+  close(f);
+  for i:=1 to n do
   begin
-    inc(tmp,3);
-    inc(ttl,tmp);
+    tmp:=a[i];
+    inc(mtmp,tmp);
+    if mtmp>m then
+      begin
+        inc(res);
+        if (a[n]+mtmp>m) and (i=n) then inc(res);
+        mtmp:=a[i];
+      end;
   end;
-  write(ttl);
+  assign(f,'125.out');
+  rewrite(f);
+  if res=0 then inc(res);
+  write(f,res);
+  close(f);
 end.
-{Chia qua}
+{Xep hang hoa sao cho so lan di xe la it nhat}

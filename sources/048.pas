@@ -1,6 +1,6 @@
 var a:array[1..100] of string;
 gia:array[1..100] of longint;
-i,j,k:byte;
+i:byte;
 sl,tong,min,max:longint;
 f:text;
 begin

@@ -1,6 +1,12 @@
-var a,m,n:word;
+var d,k,n:longint;
 begin
-  read(n,m,a);
-  if n<a then write(n*m) else write(n*m*0.75:4:0);
+  read(n,k);
+  repeat
+  begin
+    inc(k,k);
+    inc(d);
+  end
+  until k>n;
+  write(d);
 end.
-{Nhung doa hoa hong}
+{Gia cong san pham}

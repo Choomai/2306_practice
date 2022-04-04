@@ -1,6 +1,5 @@
 uses crt;
-var f:text;
-nt:array[1..100] of longint;
+var nt:array[1..100] of longint;
 n,m,dem,i,tam,j:longint;
 res:boolean;
 begin

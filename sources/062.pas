@@ -1,5 +1,5 @@
 var f:text;
-tn,tam:ansistring;
+tam:ansistring;
 n:int64;
 i,j:longint;
 begin

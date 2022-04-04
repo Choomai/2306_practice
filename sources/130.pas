@@ -1,25 +1,17 @@
-var f:text;
-tmp,max:longint;
-n,i,j:word;
-a:array[1..1000] of integer;
+var i,n,cnta:longint;
 begin
-  assign(f,'130.inp');
-  reset(f);
-  readln(f,n);
-  for i:=1 to n do read(f,a[i]);
-  close(f);
-  for i:=1 to n do
+  while n<2 do read(n);
+  write('Cac uoc cua N la: ');
+  cnta:=1;
+  for i:=1 to n-1 do
   begin
-    tmp:=0;
-    for j:=i to n do
+    if n mod i=0 then 
     begin
-      if max<tmp then max:=tmp;
-      tmp:=tmp+a[j];
+      write(i,'; ');
+      inc(cnta);
     end;
   end;
-  assign(f,'130.out');
-  rewrite(f);
-  write(f,max);
-  close(f);
+  writeln(n);
+  writeln('So uoc cua N la: ',cnta);
+  // Chua tinh so M
 end.
-{Tim doan con co tong cac gia tri cua doan do lon nhat}

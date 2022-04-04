@@ -1,5 +1,5 @@
 var f:text;
-n,uc:array[1..100] of word;
+n:array[1..100] of word;
 ucln:word;
 i,maxn:byte;
 begin

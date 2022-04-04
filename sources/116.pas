@@ -1,31 +1,46 @@
 var f:text;
-nt:array[1..100000] of longint;
-i,j,n,cnt,cntnt,cntres:longint;
+a,b:array[1..70] of longint;
+ttlc:array[1..35] of longint;
+i,n,rep,ttla,ttlb:longint;
+chkttlc:boolean;
+label nxt;
 begin
   assign(f,'116.inp');
   reset(f);
   read(f,n);
   close(f);
-  for i:=2 to n do
+  repeat
   begin
-    cnt:=0;
-    for j:=1 to i do if i mod j=0 then inc(cnt);
-    if cnt=2 then
+    inc(rep);
+    ttla:=0;ttlb:=0;
+    for i:=1 to n do 
     begin
-      inc(cntnt);
-      nt[cntnt]:=i;
+      a[i]:=random(2*n);
+      b[i]:=random(2*n);
+      if a[i]=0 then a[i]:=random(2*n);
+      if b[i]=0 then b[i]:=random(2*n);
     end;
-  end;
+    for i:=1 to n do
+    begin
+      ttla:=ttla+a[i];
+      ttlb:=ttlb+b[i];
+      ttlc[i]:=a[i]+b[i];
+    end;
+    for i:=2 to n do if ttlc[i]=ttlc[1] then chkttlc:=true else goto nxt;
+    continue;
+    nxt:chkttlc:=false;
+  end
+  until ((ttla=ttlb) and (chkttlc=true)) or (rep=1000000);
   assign(f,'116.out');
   rewrite(f);
-  for i:=1 to cntnt do
+  if rep=1000000 then write(f,'No solution') else
   begin
-    if nt[i+1]-nt[i]=2 then
-    begin
-      inc(cntres);
-      writeln(f,cntres,': [',nt[i],',',nt[i+1],']');  
-    end;
+    for i:=1 to n do write(f,a[i],' ');
+    writeln(f);
+    for i:=1 to n do write(f,b[i],' ');
+    writeln(f);
+    write(f,ttla);
   end;
   close(f);
 end.
-{Nguyen to sinh doi}
+{Sap xep so (thi cap tinh 2020-2021)}

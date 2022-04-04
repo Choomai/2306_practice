@@ -2,7 +2,6 @@ var f:text;
 a:array[1..5,1..5] of longint;
 tongdcc,tongdcp,tongpthc,tongpthl:longint;
 i,j,n,m,tam:integer;
-tam1:real;
 begin
   assign(f,'050.inp');
   reset(f);

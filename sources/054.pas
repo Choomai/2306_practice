@@ -1,7 +1,6 @@
 uses crt;
 var a:array[1..100] of longint;
-n,max:longint;
-i,dem:byte;
+n,i,max:longint;
 label 1,2;
 begin
   clrscr;

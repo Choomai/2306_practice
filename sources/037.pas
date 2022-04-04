@@ -1,6 +1,5 @@
 uses crt;
 var a,b,aa,bb:longint;
-i:byte;
 begin
   clrscr;
   write('Nhap a:');readln(a);

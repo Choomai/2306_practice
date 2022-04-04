@@ -1,18 +1,17 @@
-var stri:string;
-i,j,k,n,ttl:longint;
-subi,lt:array[1..255] of longint;
+var bin,strtmp:string;
+i,n:longint;
 begin
   read(n);
-  for i:=1 to n do
+  repeat
   begin
-    str(i,stri);
-    ttl:=0;
-    for j:=1 to length(stri) do lt[j]:=1;
-    for j:=1 to length(stri) do val(stri[j],subi[j]);
-    for j:=1 to length(stri) do
-      for k:=1 to length(stri) do lt[j]:=lt[j]*subi[j];
-    for j:=1 to length(stri) do ttl:=ttl+lt[j];
-    if ttl=i then write(i,' ');
-  end;
+    str(n mod 2,strtmp);
+    bin:=bin+strtmp;
+    n:=n div 2;
+  end
+  until n=0;
+  writeln(bin);
+  strtmp:='';
+  for i:=length(bin) downto 1 do strtmp:=strtmp+bin[i];
+  if strtmp=bin then write('CO') else write('KHONG');
 end.
-{So ArmStrong}
+{Chuyen doi n sang co so 2 va kiem tra doi xung}

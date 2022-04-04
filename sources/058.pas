@@ -1,5 +1,5 @@
 var f:text;
-z,tam2,vt:array[1..10000] of longint;
+z,vt:array[1..10000] of longint;
 a,b,aa,bb,tam1,tong,i,j,k:longint;
 dem,csnt,maxvt:byte;
 label 1,2,kt;
@@ -39,7 +39,6 @@ begin
       begin
         inc(csnt);
         inc(k);
-        tam2[k]:=z[j];
         inc(tam1);
         vt[tam1]:=j;
       end;

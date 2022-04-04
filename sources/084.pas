@@ -1,6 +1,6 @@
 var fio:text;
 f1,f2,f:longint;
-n,m,i:byte;
+m,i:byte;
 begin
   assign(fio,'04.inp');
   reset(fio);

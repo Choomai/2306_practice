@@ -1,25 +1,6 @@
-var f:text;
-ti:array[1..1000] of integer;
-i,j,n,tmp,lct:integer;
+var a,m,n:word;
 begin
-  assign(f,'124.inp');
-  reset(f);
-  readln(f,n);
-  for i:=1 to n do readln(f,ti[i]);
-  close(f);
-  assign(f,'124.out');
-  rewrite(f);
-  for i:=1 to 4 do
-  begin
-    tmp:=30000;
-    for j:=1 to n do if tmp>ti[j] then
-    begin
-      tmp:=ti[j];
-      lct:=j;
-    end;
-    write(f,lct,' ');
-    ti[lct]:=30000;
-  end;
-  close(f);
+  read(n,m,a);
+  if n<a then write(n*m) else write(n*m*0.75:4:0);
 end.
-{Tim 4 nguoi co ti nho nhat va in ra STT trong day}
+{Nhung doa hoa hong}

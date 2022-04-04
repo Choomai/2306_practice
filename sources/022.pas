@@ -1,7 +1,7 @@
 uses crt;
 var a:array[1..100,1..100] of longint;
 i,j,n,m:byte;
-max,min,vtxmax,vtzmax,vtxmin,vtzmin,tam:longint;
+max,min,vtxmax,vtzmax,vtxmin,vtzmin:longint;
 begin
   clrscr;
   write('Nhap hang:');readln(n);

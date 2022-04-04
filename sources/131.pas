@@ -1,10 +1,18 @@
-var bh,ch,ab,ac:real;
+var tmp:string[4];
+i,j,tmpnum:longint;
+chk:boolean;
 begin
-  while bh<=0 do read(bh);
-  while ch<=0 do read(ch);
-  ab:=sqrt((bh+ch)*bh);
-  writeln('AB=',ab:4:2);
-  ac:=sqrt((bh+ch)*ch);
-  write('S=',ab*ac/2:4:2);
+  for i:=1000 to 9999 do
+  begin
+    chk:=false;
+    for j:=1 to 4 do
+    begin
+      str(i,tmp);
+      delete(tmp,j,1);
+      val(tmp,tmpnum);
+      if tmpnum*9=i then chk:=true;
+    end;
+    if chk=true then write(i,' ');
+  end;
 end.
-{Cho tam giac ABC(vuong tai A), duong cao AH, nhap BH,CH va tinh AB,S_ABC}
+{In ra so(xxxx) khi loai bo 1 chu so bat ki thi so do*9=(xxxx)}

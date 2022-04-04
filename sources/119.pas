@@ -1,20 +1,29 @@
 var f:text;
-n,i,tmp:longint;
-a:array[1..1000000] of longint;
+m:array[1..10000] of longint;
+t,i,j,tmp,utmp:longint;
 begin
   assign(f,'119.inp');
   reset(f);
-  readln(f,n);
-  for i:=1 to n do read(f,a[i]);
+  read(f,t);
+  for i:=1 to t do readln(f,m[i]); 
   close(f);
   assign(f,'119.out');
   rewrite(f);
-  a[2]:=a[2]+a[1];
-  for i:=3 to n do
+  for i:=1 to t do
   begin
-    a[i]:=a[i]+a[i-1];
+    tmp:=2;utmp:=0;
+    for j:=1 to m[i] do if m[i] mod j=0 then inc(utmp);
+    write(f,utmp,' ');
+    repeat
+    begin
+      while m[i] mod tmp<>0 do inc(tmp);
+      write(f,tmp);
+      m[i]:=m[i] div tmp;
+      if m[i]>1 then write(f,'*');
+    end 
+    until m[i]=1;
+    writeln(f);
   end;
-  for i:=1 to n do write(f,a[i],' ');
   close(f);
 end.
-{Noi nhanh https://youtu.be/AQshvrC3tfw}
+{Nguyen to https://youtu.be/AQshvrC3tfw}

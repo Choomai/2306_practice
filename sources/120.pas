@@ -1,29 +1,24 @@
 var f:text;
-m:array[1..10000] of longint;
-t,i,j,tmp,utmp:longint;
+i,j,n,k,tmp1,tmp2,revtmp:longint;
+ttl:array[1..1000] of word;
 begin
   assign(f,'120.inp');
   reset(f);
-  read(f,t);
-  for i:=1 to t do readln(f,m[i]); 
-  close(f);
-  assign(f,'120.out');
-  rewrite(f);
-  for i:=1 to t do
+  read(f,n,k);
+  for i:=1 to n do
   begin
-    tmp:=2;utmp:=0;
-    for j:=1 to m[i] do if m[i] mod j=0 then inc(utmp);
-    write(f,utmp,' ');
-    repeat
-    begin
-      while m[i] mod tmp<>0 do inc(tmp);
-      write(f,tmp);
-      m[i]:=m[i] div tmp;
-      if m[i]>1 then write(f,'*');
-    end 
-    until m[i]=1;
-    writeln(f);
+    readln(f,tmp1,tmp2);
+    ttl[i]:=tmp1+tmp2;
   end;
   close(f);
+  for i:=1 to n do
+    for j:=1 to n do
+      if ttl[i]>ttl[j] then
+      begin
+        revtmp:=ttl[j];
+        ttl[j]:=ttl[i];
+        ttl[i]:=revtmp;
+      end;
+  for i:=1 to k do write(ttl[i],' ');
 end.
-{Nguyen to https://youtu.be/AQshvrC3tfw}
+{Chon ra k nguoi co tong IQ va AQ lon nhat}
