@@ -21,7 +21,7 @@ begin
   assign(f,'052.out');
   rewrite(f);
   for k:=1 to n do val(a[k],i);
-  for i:=1 to 4 do write(f,nt[i],' ');
+    for i:=1 to 4 do write(f,nt[i],' ');
   repeat
   begin
     inc(i);

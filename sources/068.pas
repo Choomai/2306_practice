@@ -7,8 +7,8 @@ begin
   close(f);
   assign(f,'068.out');
   rewrite(f);
-  if (a+b>c) and (b+c>a) and (a+c>b) then write(f,'Duoc') else
-    write(f,'Khong');
+  if (a+b>c) and (b+c>a) and (a+c>b) then write(f,'Duoc') 
+    else write(f,'Khong');
   close(f);
 end.
 {Kiem tra tam giac hop le}

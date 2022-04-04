@@ -9,6 +9,5 @@ begin
   if a[i] in ['0'..'9'] then delete(a,i,1)
   else inc(i);
   write(a);
-  readln;
 end.
 {Xoa cac chu so trong xau}
