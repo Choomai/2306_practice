@@ -3,6 +3,11 @@ tmp:string;
 i,row,clm:longint;
 chartmp:array[1..8] of byte;
 const base26='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+procedure incnxt(fst:byte);
+begin
+  inc(chartmp[fst+1]);
+  chartmp[fst]:=1;
+end;
 begin
   assign(f,'078.inp');reset(f);
   read(f,tmp);
@@ -19,41 +24,13 @@ begin
   begin
     dec(clm);
     inc(chartmp[1]);
-    if chartmp[1]=27 then 
-    begin
-      inc(chartmp[2]);
-      chartmp[1]:=1;
-    end;
-    if chartmp[2]=27 then
-    begin
-      inc(chartmp[3]);
-      chartmp[2]:=1;
-    end;
-    if chartmp[3]=27 then
-    begin
-      inc(chartmp[4]);
-      chartmp[3]:=1;
-    end;
-    if chartmp[4]=27 then
-    begin
-      inc(chartmp[5]);
-      chartmp[4]:=1;
-    end;
-    if chartmp[5]=27 then
-    begin
-      inc(chartmp[6]);
-      chartmp[5]:=1;
-    end;
-    if chartmp[6]=27 then
-    begin
-      inc(chartmp[7]);
-      chartmp[6]:=1;
-    end;
-    if chartmp[7]=27 then
-    begin
-      inc(chartmp[8]);
-      chartmp[7]:=1;
-    end;
+    if chartmp[1]=27 then incnxt(1);
+    if chartmp[2]=27 then incnxt(2);
+    if chartmp[3]=27 then incnxt(3);
+    if chartmp[4]=27 then incnxt(4);
+    if chartmp[5]=27 then incnxt(5);
+    if chartmp[6]=27 then incnxt(6);
+    if chartmp[7]=27 then incnxt(7);
   end
   until clm=0;
   for i:=8 downto 1 do if chartmp[i]<>0 then write(base26[chartmp[i]]);
