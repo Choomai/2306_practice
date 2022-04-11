@@ -21,4 +21,4 @@ begin
   write(a[1]);
   for i:=2 to n do write(',',a[i]);
 end.
-{Khong xac dinh}
+{Không xác định}

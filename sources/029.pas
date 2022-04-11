@@ -10,4 +10,4 @@ begin
   else inc(i);
   write(a);
 end.
-{Xoa cac chu so trong xau}
+{Xóa các chữ số trong xâu}

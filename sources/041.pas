@@ -15,4 +15,4 @@ begin
   until n=1;
   readln;
 end.
-{Phan tich thua so nguyen to}
+{Phân tích thừa số nguyên tố}

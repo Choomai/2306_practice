@@ -38,4 +38,4 @@ begin
     writeln;
   end;
 end.
-{Doi vi tri max,min trong mang 2 chieu}
+{Đổi max,min trong mảng 2 chiều}

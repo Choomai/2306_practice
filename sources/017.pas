@@ -33,4 +33,4 @@ begin
     writeln;
   end;
 end.
-{Tim gia tri nho nhat, lon nhat trong mang 2 chieu}
+{Tìm MIN, MAX trong mảng 2 chiều}

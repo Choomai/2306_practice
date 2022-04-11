@@ -14,4 +14,4 @@ begin
   if m=1 then write(n) else write(n,'/',m);
   readln;
 end.
-{Rut gon phan so}
+{Rút gọn phân số}

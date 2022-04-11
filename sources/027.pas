@@ -13,4 +13,4 @@ begin
     delete(a,1,pos(#32,a));
   end;
 end.
-{Xoa cac ki tu trang thua va in ra moi tu trong moi dong}
+{Xóa " " thừa và in ra 1 từ/dòng}

@@ -33,4 +33,4 @@ begin
   write(a[1]:4:2);
   for i:=2 to n do write(',',a[i]:4:2);
 end.
-{Tinh tong, tb cong, min, max trong mang 1 chieu}
+{Tính SUM, AVG, MIN, MAX trong mảng 1 chiều}

@@ -1,21 +1,9 @@
-var i,n,t1,t2:longint;
+var i,n,t:longint;
 begin
   read(n);
-  t1:=2;t2:=2;
-  for i:=2 to n-1 do
-  begin
-    if odd(i) then
-    begin
-      t1:=t1*2;
-      t2:=t2*2;
-    end
-    else
-    begin
-      t1:=t1+(t1 div 2);
-      t2:=t2+(t2 div 2);
-    end;
-  end;
-  write(t1+t2);
+  t:=2;
+  for i:=2 to n-1 do if odd(i) then t:=t*2 else t:=t+(t div 2);
+  write(t*2);
 end.
-{Tinh xem co bao nhieu cach to mau n bang mau}
-{Co 3 mau 1;2;3, odd=[1;3], even=[1;2;3], 2 o canh nhau phai khac mau}
+{Tính xem có bao nhiêu cách tô màu n bảng màu}
+{Có 3 màu 1;2;3, odd=[1;3], even=[1;2;3], 2 ô cạnh nhau phải khác màu}

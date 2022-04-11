@@ -32,4 +32,4 @@ begin
     writeln;
   end;
 end.
-{Sap xep mang 2 chieu}
+{Sắp xếp mảng 2 chiều}

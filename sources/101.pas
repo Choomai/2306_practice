@@ -30,4 +30,4 @@ begin
   for i:=1 to j do write(f,vt[i],' ');
   close(f);
 end.
-{Tinh tong cac chu so cua a, in ra chu so lon nhat va vi tri cua no}s
+{Tinh tong cac chu so cua a, in ra chu so lon nhat va vi tri cua no}

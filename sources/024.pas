@@ -7,4 +7,4 @@ begin
   for i:=1 to length(a) do a[i]:=lowercase(a[i]);
   write(a);
 end.
-{In thuong tat ca chu trong xau}
+{In thường tất cả chữ cái trong xâu}

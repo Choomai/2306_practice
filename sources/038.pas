@@ -27,4 +27,4 @@ begin
   writeln('UCLN la ',ucln);
   write(tong);
 end.
-{Tinh UCLN, n1^1+n2^2+... trong mang}
+{Tính ƯCLN, n1^1+n2^2+... trong mảng 1 chiều}

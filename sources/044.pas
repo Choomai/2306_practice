@@ -10,4 +10,4 @@ begin
   write(f,a+b);
   close(f);
 end.
-{Tinh tong a va b}
+{Tính tổng a và b}

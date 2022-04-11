@@ -24,4 +24,4 @@ begin
   writeln;
   write(x,' xuat hien ',dem,' lan trong mang a');
 end.
-{Kiem tra x xuat hien o vi tri nao va bao nhieu lan}
+{Kiểm tra vị trí của x và xuất hiện bao nhiêu lần trong mảng}

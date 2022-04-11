@@ -22,4 +22,4 @@ begin
   write(f,x);
   close(f);
 end.
-{Tim so am lon nhat trong day}
+{Tìm số âm lớn nhất trong dãy}

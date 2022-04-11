@@ -18,4 +18,4 @@ begin
     if dem=n-1 then write(a[i],' ');
   end;
 end.
-{Liet ke so xuat hien 1 lan trong mang}
+{Liệt kê số xuất hiện 1 lần trong mảng}

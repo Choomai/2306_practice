@@ -28,4 +28,4 @@ begin
   end;
   if z=n then write('Khong co phan tu yen ngua!');
 end.
-{Phan tu yen ngua(min=m,max=n)}
+{Phần tử yên ngựa(min=m,max=n)}

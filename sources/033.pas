@@ -13,4 +13,4 @@ begin
     end
     else write(a[i]);
 end.
-{In hoa chu cai dau tien cua moi tu}
+{In hoa chữ cái đầu tiên của mỗi từ}

@@ -17,4 +17,4 @@ begin
   write(a[1]);
   for i:=2 to n do write(',',a[i]);
 end.
-{Chen so vao mang 1 chieu}
+{Chèn số vào mảng 1 chiều}

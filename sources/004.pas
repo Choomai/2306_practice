@@ -6,4 +6,4 @@ begin
   for i:=1 to n do
     if odd(i) then write(i,',');
 end.
-{In cac so le <=n}
+{In các số lẻ <=n}

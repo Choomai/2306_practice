@@ -28,4 +28,4 @@ begin
   write('Day co do dai lon nhat ');
   for i:=maxvt to maxvt+maxdd-1 do write(a[i],' ');
 end.
-{In day co do dai lon nhat trong mang}
+{In dãy có độ dài lớn nhất trong mảng 1 chiều}

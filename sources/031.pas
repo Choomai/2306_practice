@@ -12,4 +12,4 @@ begin
     delete(a,i,length(a)-i+1);
   end;
 end.
-{Dao nguoc vi tri cua cac tu trong xau}
+{Đảo ngược vị trí các từ trong xâu v2}

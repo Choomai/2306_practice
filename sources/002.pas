@@ -8,4 +8,4 @@ begin
   for i:=1 to n do gt:=gt*i;
   write('Giai thua cua ',n,' la ',gt);
 end.
-{Tinh giai thua cua n}
+{Tính giai thừa của n}

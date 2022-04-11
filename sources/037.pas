@@ -9,4 +9,4 @@ begin
   write('UCLN cua ',a,' va ',b,' la ',aa);
   readln;
 end.
-{Tinh UCLN cua 2 so}
+{Tính ƯCLN của 2 số}

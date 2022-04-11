@@ -10,3 +10,4 @@ begin
         if i>j then a[i,j]:=a[i-1,j] else a[i,j]:=a[i-1,j]+a[i,j-i];
   write('Co ',a[n,n],' cach phan tich');
 end.
+{Không xác định}

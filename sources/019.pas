@@ -16,4 +16,4 @@ begin
   for i:=1 to 3 do
     for j:=1 to 3 do write(c[i,j],' ');
 end.
-{Tinh tong mang 2 chieu a,b}
+{Tính tổng mảng 2 chiều a,b}

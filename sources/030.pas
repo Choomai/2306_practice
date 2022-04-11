@@ -19,4 +19,4 @@ begin
   write(b);
   readln;
 end.
-{Dao nguoc vi tri cac tu trong xau}
+{Đảo ngược vị trí các từ trong xâu v1}

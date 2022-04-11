@@ -15,4 +15,4 @@ begin
   for i:=1 to n do
     if a[i]=x then inc(c);
 end.
-{Khong xac dinh}
+{Không xác định}

@@ -14,3 +14,4 @@ begin
     else inc(dem);
   for i:=vtd to vtc+1 do write(a[i]);
 end.
+{Không xác định}

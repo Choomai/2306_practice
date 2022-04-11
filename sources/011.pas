@@ -19,4 +19,4 @@ begin
     end;
   if c=0 then write('Khong co gia tri ',b,' trong mang!');
 end.
-{Tim vi tri cua 1 so trong mang 1 chieu}
+{Tìm vị trí của 1 số trong mảng 1 chiều}

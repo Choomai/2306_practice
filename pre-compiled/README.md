@@ -1,1 +1,1 @@
-﻿Move/Copy input file(s) into same directory, otherwise runtime error 2 will occur.
+﻿Di chuyển/Sao chép file input và file exe vào cùng 1 thư mục, tránh runtime error 2.

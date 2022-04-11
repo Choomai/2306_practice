@@ -23,3 +23,4 @@ begin
   write('Cac so nguyen to:');
   for i:=1 to n do if nt[i]<>0 then write(nt[i],' ');
 end.
+{Tính AVG của các pt>0 và in ra các số nguyên tố}

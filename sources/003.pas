@@ -14,4 +14,4 @@ begin
   end
   until f>n;
 end.
-{In day Fibonacci <=n}
+{In dãy Fibonacci <=n}

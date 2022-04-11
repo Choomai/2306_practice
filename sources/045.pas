@@ -11,4 +11,4 @@ begin
   for i:=100 downto 1 do if a[i]<>0 then write(f,a[i],' ');
   close(f);
 end.
-{In tu cuoi mang toi dau mang}
+{In từ đầu mảng tới cuối mảng}

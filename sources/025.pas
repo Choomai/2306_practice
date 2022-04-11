@@ -8,4 +8,4 @@ begin
     if a[i] in ['0'..'9'] then inc(dem);
   write('Ky tu chu so xuat hien trong xau ',dem,' lan');
 end.
-{Kiem tra co bao nhieu ky tu so trong xau}
+{Kiểm tra có bao nhiêu ký tự chữ số trong xâu}

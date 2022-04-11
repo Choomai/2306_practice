@@ -7,4 +7,4 @@ begin
   for i:=length(a) downto 1 do b:=b+a[i];
     if a=b then write('Xau nay doi xung') else write('Xau nay khong doi xung');
 end.
-{Kiem tra xau doi xung}
+{Kiểm tra xâu đối xứng}

@@ -20,4 +20,4 @@ begin
       if min>a[i,j] then min:=a[i,j];
   write('Phan tu nho nhat trong ma tran la ',min);
 end.
-{Tim min trong mang 2 chieu}
+{Tìm min trong mảng 2 chiều}

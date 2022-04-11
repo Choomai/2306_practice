@@ -29,3 +29,4 @@ begin
   1:write(a,'+',b,'=',n);
   readln;
 end.
+{Không xác định}

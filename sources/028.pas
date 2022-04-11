@@ -17,4 +17,4 @@ begin
   writeln;
   write('Co ',dem,' chu cai trong xau');
 end.
-{Dao nguoc, kiem tra cac chu cai va so luong cua chung trong xau}
+{Đảo ngược, kiểm tra các chữ cái riêng biệt và số lượng của chúng trong xâu}

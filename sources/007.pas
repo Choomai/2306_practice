@@ -14,4 +14,4 @@ begin
   dec(n);
   for i:=1 to n do write(a[i],',');
 end.
-{Xoa 1 so trong mang 1 chieu}
+{Xóa 1 số trong mảng 1 chiều}

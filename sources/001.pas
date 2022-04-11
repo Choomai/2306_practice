@@ -8,4 +8,4 @@ begin
   if dem=2 then write(n,' la so nguyen to')
     else write(n,' khong phai la so nguyen to');
 end.
-{Kiem tra so nguyen to}
+{Kiểm tra số nguyên tố}

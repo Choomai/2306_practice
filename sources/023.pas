@@ -7,4 +7,4 @@ begin
   for i:=1 to length(a) do a[i]:=upcase(a[i]);
   write(a);
 end.
-{In hoa tat ca chu trong xau}
+{In hoa tất cả chữ cái trong xâu}
