@@ -32,4 +32,4 @@ begin
   for i:=n downto stp+1 do write(f,a[i],' ');
   close(f);
 end.
-{Chia goi keo ra 2 sao cho chenh lech 2 ben la min}
+{Chia gói kẹo ra 2 sao cho chênh lệch 2 bên là min}
