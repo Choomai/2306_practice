@@ -1,5 +1,5 @@
 uses crt;
-var dem,n,i:integer;
+var cnt,n,i:integer;
 begin
   clrscr;
   write('Nhap so:');readln(n);
