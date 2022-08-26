@@ -1,30 +1,32 @@
 uses crt;
 var tmp:string;
-i,j,l,k,n,cnt,dem,fnl,ntmp,cnttmp:longint;
+i,j,k,n,cnt,dem,fnl,ntmp:longint;
 chktmp:boolean;
+function chk_snt(inp: longint):boolean;
+begin
+  dem:=0;
+  for j:=1 to inp do if inp mod j=0 then inc(dem);
+  if dem=2 then chk_snt:=true else chk_snt:=false;
+end;
 begin
   write('Nhap n:');readln(n);
   write('Cac so sieu nguyen to co ',n,' chu so la: ');
   fnl:=1;
   for i:=2 to n do fnl:=fnl*10;
-  for i:=fnl to fnl*10-1 do
+  for i:=fnl to fnl*10-1 do // Chuyển đổi sang dãy số có n chữ số và lặp lại
   begin
-    dem:=0;
-    for j:=1 to i do if i mod j=0 then inc(dem);
-    if dem=2 then
+    if chk_snt(i)=true then // Kiểm tra số nguyên tố
     begin
       str(i,tmp);
-      for l:=2 to n do
+      for k:=2 to n do
       begin
-        cnttmp:=0;
         delete(tmp,length(tmp),1);
-        val(tmp,ntmp);
-        for k:=1 to ntmp do if ntmp mod k=0 then inc(cnttmp);
-        if cnttmp=2 then chktmp:=true else
+        val(tmp,ntmp); // Loại bỏ chữ số đầu tiên
+        if chk_snt(ntmp) then chktmp:=true else
         begin
           chktmp:=false;
           break;
-        end;
+        end; // Nếu không phải số nguyên tố thì thoát vòng lặp và tăng i
       end;
       if chktmp=false then continue else 
       begin
