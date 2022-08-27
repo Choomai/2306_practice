@@ -68,5 +68,5 @@ begin
   res:writeln(subs);
   for i:=1 to n do if subs[i]='A' then inc(cnt);
   write('So luong ki tu A: ',cnt);
-end.
+end. // Chưa hoàn thành
 {Bài 3, Đề thi cấp tỉnh Thừa Thiên Huế 21-22}
