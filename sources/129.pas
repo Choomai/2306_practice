@@ -7,4 +7,4 @@ begin
   ac:=sqrt((bh+ch)*ch);
   write('S=',ab*ac/2:4:2);
 end.
-{Cho tam giac ABC(vuong tai A), duong cao AH, nhap BH,CH va tinh AB,S_ABC}
+{Cho tam giác ABC(vuông tại A), đường cao AH, nhập BH,CH va tính AB,S_ABC}

@@ -22,4 +22,4 @@ begin
   write(f,max);
   close(f);
 end.
-{Tim doan con co tong cac gia tri cua doan do lon nhat}
+{Tìm đoạn con có tổng các giá trị của đoạn đó lớn nhất}

@@ -15,4 +15,4 @@ begin
     if chk=true then write(i,' ');
   end;
 end.
-{In ra so(xxxx) khi loai bo 1 chu so bat ki thi so do*9=(xxxx)}
+{In ra số(xxxx) khi loại bỏ 1 chữ số bất kì thì số đó*9=(xxxx)}

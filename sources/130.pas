@@ -13,5 +13,5 @@ begin
   end;
   writeln(n);
   writeln('So uoc cua N la: ',cnta);
-  // Chua tinh so M
+  // Chưa tính số M
 end.
