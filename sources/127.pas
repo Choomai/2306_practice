@@ -29,4 +29,4 @@ begin
   write(f,res);
   close(f);
 end.
-{Chuoi ngoc}
+{Chuỗi ngọc}

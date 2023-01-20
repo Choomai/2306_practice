@@ -26,4 +26,4 @@ begin
   write(f,tien:0:0);
   close(f);
 end.
-{Tinh tien TAXI}
+{Tính tiền TAXI}

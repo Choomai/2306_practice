@@ -32,4 +32,4 @@ begin
   close(f);
   for i:=1 to 5 do writeln(a[i],' ',b[i]);
 end.
-{In ra tap hop A va B va giao cua chung}
+{In ra tập hợp A & B và giao của chúng}

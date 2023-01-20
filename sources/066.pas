@@ -6,4 +6,4 @@ begin
   s:=sqr(c*sqrt(2)/2)*pi;
   write('Dien tich hinh tron la ',s:4:2);
 end.
-{Tinh dien tich hinh tron}
+{Tính diện tích hình tròn}

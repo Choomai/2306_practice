@@ -12,4 +12,4 @@ begin
     if a[i] in ['0'..'9'] then write(f,a[i]);
   close(f);
 end.
-{Loc so trong xau}
+{Lọc số trong xâu}

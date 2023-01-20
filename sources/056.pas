@@ -18,8 +18,8 @@ begin
     else dem:=0;
   assign(f,'056.out');
   rewrite(f);
-  writeln(f,max);
-  write(f,copy(s,vt-max+1,max));
+  writeln(f,max); // In ra độ dài của số
+  write(f,copy(s,vt-max+1,max)); // In ra số đó trong xâu
   close(f);
 end.
-{Tinh tong cac chu so trong day so lon nhat trong xau}
+{Tính tổng các chữ số trong dãy số lớn nhất trong xâu}

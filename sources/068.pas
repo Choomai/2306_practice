@@ -11,4 +11,4 @@ begin
     else write(f,'Khong');
   close(f);
 end.
-{Kiem tra tam giac hop le}
+{Kiểm tra tam giác hợp lệ}

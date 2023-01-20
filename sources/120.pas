@@ -21,4 +21,4 @@ begin
       end;
   for i:=1 to k do write(ttl[i],' ');
 end.
-{Chon ra k nguoi co tong IQ va AQ lon nhat}
+{Chọn ra k người có tổng IQ và AQ lớn nhất}

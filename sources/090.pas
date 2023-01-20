@@ -27,4 +27,4 @@ begin
   write(f,m3:4:2);
   close(f);
 end.
-{Tinh lai suat ngan hang}
+{Tính lãi suất ngân hàng}

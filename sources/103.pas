@@ -38,4 +38,4 @@ begin
   writeln;
   write('Tat ca co ',cnt,' so');
 end.
-{In so sieu nguyen to co N so}
+{In số siêu nguyên tố có N số}

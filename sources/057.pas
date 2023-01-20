@@ -20,4 +20,4 @@ begin
   write(f,ucln);
   close(f);
 end.
-{Tinh UCLN trong day so}
+{Tính ước chung lớn nhất trong dãy số}

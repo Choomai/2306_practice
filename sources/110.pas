@@ -22,4 +22,4 @@ begin
     if wrd[i][1]=chr then writeln(f,wrd[i]);
   close(f);
 end.
-{In cac tu bat dau bang chr}
+{In các từ bắt đầu bằng chr}

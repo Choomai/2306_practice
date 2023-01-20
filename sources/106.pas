@@ -11,5 +11,5 @@ begin
   if n+1<tl then write(f,0) else write(f,n-tl+1);
   close(f);
 end.
-{Vi tri POS}
-{Trong hang co N nguoi, khong it hon a nguoi dung truoc, khong lon hon b nguoi dung sau, co ? vi tri co the dung trong hang}
+{Vị trí POS}
+{Trong hàng có N người, không ít hơn a người đứng trước, không lớn hơn b người đứng sau, có ? vị trí có thể đứng trong hàng}

@@ -22,4 +22,4 @@ begin
   write(f,h,' ',m,' ',s);
   close(f);
 end.
-{Dong ho CLOCK}
+{Đồng hồ CLOCK}

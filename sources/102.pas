@@ -20,4 +20,4 @@ begin
   for i:=maxvt-maxdd to maxvt-1 do write(f,a[i]);
   close(f);
 end.
-{In do dai day so dai nhat trong xau}
+{In độ dài dãy số dài nhất trong xâu}

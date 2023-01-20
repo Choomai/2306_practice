@@ -9,4 +9,4 @@ begin
   end;
   write(ttl);
 end.
-{Chia qua}
+{Chia quà}

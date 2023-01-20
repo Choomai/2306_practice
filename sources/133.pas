@@ -15,4 +15,4 @@ begin
     if ttl=i then write(i,' ');
   end;
 end.
-{So ArmStrong}
+{Số ArmStrong}

@@ -11,4 +11,4 @@ begin
   for i:=1 to length(a) do if a[i]=' ' then inc(dem);
   write('Xau co ',dem,' tu');
 end.
-{Kiem tra xau co may tu}
+{Kiểm tra xâu có mấy từ}

@@ -26,4 +26,4 @@ begin
   write(f,all);
   close(f);
 end.
-{Tinh tien Internet}
+{Tính tiền Internet}

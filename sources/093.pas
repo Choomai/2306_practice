@@ -42,4 +42,4 @@ begin
   for i:=1 to t do if chk[i]=true then writeln(f,'YES') else writeln(f,'NO');
   close(f);
 end.
-{Kiem tra ngoac don}
+{Kiểm tra ngoặc đơn}

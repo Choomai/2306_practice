@@ -25,4 +25,4 @@ begin
   for j:=i downto 1 do write(f,nt[j],' ');
   close(f);
 end.
-{Day so hanh phuc cua nguoi Ba Tu}
+{Dãy số hạnh phúc của người Ba Tư}

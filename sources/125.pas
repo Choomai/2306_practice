@@ -24,4 +24,4 @@ begin
   write(f,res);
   close(f);
 end.
-{Xep hang hoa sao cho so lan di xe la it nhat}
+{Xếp hàng hóa sao cho số lần đi xe là ít nhất}

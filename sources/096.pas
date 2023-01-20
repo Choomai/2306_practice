@@ -30,4 +30,4 @@ begin
   end;
   close(f);
 end.
-{Dem co bao nhieu ky tu khac nhau}
+{Đếm có bao nhiêu kí tự khác nhau}

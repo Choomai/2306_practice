@@ -11,4 +11,4 @@ begin
     else write(f,n:0:0,' khong phai la so chinh phuong');
   close(f);
 end.
-{Kiem tra so chinh phuong}
+{Kiểm tra số chính phương}

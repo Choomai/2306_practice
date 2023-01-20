@@ -1,0 +1,6 @@
+sources/*.exe
+sources/*.o
+sources/*.inp
+sources/*.out
+*.exe
+*.o

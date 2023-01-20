@@ -15,4 +15,4 @@ begin
   write(f,sqr(min)*3.14:4:2);
   close(f);
 end.
-{Tinh dien tich giao nhau lon nhat cua n duong tron}
+{Tính diện tích giao nhau lớn nhất của n đường tròn}

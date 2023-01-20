@@ -13,4 +13,4 @@ begin
   write(f,chk);
   close(f);
 end.
-{Kiem tra nam nhuan}
+{Kiểm tra năm nhuận}

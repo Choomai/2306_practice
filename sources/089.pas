@@ -22,4 +22,4 @@ begin
   if dem>0 then write(f,'CO TAT CA ',dem,' SO') else write(f,'KHONG CO SO NAO');
   close(f);
 end.
-{Tim so doi xung tu i toi j}
+{Tìm số đối xứng từ i tới j}

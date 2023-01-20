@@ -9,4 +9,4 @@ begin
   until k>n;
   write(d);
 end.
-{Gia cong san pham}
+{Gia công sản phẩm}

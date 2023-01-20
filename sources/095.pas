@@ -18,4 +18,4 @@ begin
   write(f,min);
   close(f);
 end.
-{Sap xep so theo thu tu tu dien}
+{Sắp xếp theo thứ tự từ điển}

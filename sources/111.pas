@@ -24,4 +24,4 @@ begin
   while a[m]<>b[i] do inc(i);
   write('Vi tri nam trong day la: ',i);
 end.
-{Tim so lon thu M va vi tri cua no trong day}
+{Tìm số lớn thứ M và vị trí của nó trong dãy}

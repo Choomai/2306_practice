@@ -20,7 +20,7 @@ begin
   assign(f,'063.out');
   rewrite(f);
   for i:=j downto 1 do
-    if a[vt[i]]='' then write(f,tam[i],' ') else write(f,tam[i],a[vt[i]]);
+    if a[vt[i]]='' then write(f,tam[i],' ') else write(f,tam[i],a[vt[i]]); //  is a bug.
   close(f);
 end.
-{Dao nguoc cac tu nhung giu nguyen dau}
+{Đảo ngược các từ nhưng giữ nguyên dấu}

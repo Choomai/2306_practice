@@ -28,4 +28,4 @@ begin
   end;
   close(f);
 end.
-{Nguyen to sinh doi}
+{Nguyên tố sinh đôi}
